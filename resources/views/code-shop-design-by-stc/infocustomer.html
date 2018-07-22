@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/shop.js"></script>
+    <title>Shop phone</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#">SHOP PHONE</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="plogo"></div>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bảo hành</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Tìm kiếm</button>
+            </form> 
+        </div>
+        <div>
+            <a href="cart.html"><i class="cart_anchor fa fa-shopping-bag"></i></a>
+            <span class="badge badge-pill badge-danger" id="count-in-cart"></span>
+        </div>
+    </nav>
+    <!-- side left menu -->
+    <div class="d-lg-none navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#side-menu-collapse" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div></div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2" style="padding-right: 0px; padding-top: 15px;">
+                <div class="collapse navbar-collapse" id="side-menu-collapse">
+                    <div class="list-group-item bg-dark text-white">
+                        Menu
+                    </div>
+                    <a href="#" class="list-group-item list-group-item-action">Item 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Item 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Item 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Item 4</a>
+                    <div class="list-group-item bg-dark text-white">
+                        Menu
+                    </div>
+                    <a href="#" class="list-group-item list-group-item-action">Item 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Item 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Item 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Item 4</a>
+                </div>
+            </div>
+
+            <div class="col-lg-10" style="padding-top: 15px;">
+                <form method="POST" onsubmit="setOrder();">
+                    <div class="form-group">
+                        <label for="name">Tên</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" class="form-control" id="addressd" name="addressd">
+                    </div>
+                    <div class="form-group">
+                        <label for="phonenumber">Số điện thoại</label>
+                        <input type="number" class="form-control" id="phonenumber" name="phonenumber">
+                    </div>
+                    <div class="form-group" style="display: none;">
+                        <input type="text" class="form-control" id="order" name="order">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Xác nhận</button>
+                </form>
+            </div> <!-- end right column -->
+        </div> <!-- end row -->
+    </div> <!-- end container-fluid -->
+    
+    <!-- This is footer -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h1 class="logo"><a href="#"> ShopPhone </a></h1>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Title</h5>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Title</h5>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Title</h5>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Liên hệ</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 Copyright</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/shop.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+    <title>Đánh giá</title>
+  </head>
+
+  <body>
+    <div class="container">			
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="rating-block">
+					<h4>Đánh giá trung bình</h4>
+					<h2 class="padding-bottom-7">4.3 <small>/ 5</small></h2>
+					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+					  <span class="fa fa-star" aria-hidden="true"></span>
+					</button>
+					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+					  <span class="fa fa-star" aria-hidden="true"></span>
+					</button>
+					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+					  <span class="fa fa-star" aria-hidden="true"></span>
+					</button>
+					<button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+					  <span class="fa fa-star" aria-hidden="true"></span>
+					</button>
+					<button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+					  <span class="fa fa-star" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h4>Thông kê đánh giá</h4>
+				<div style="width: 234px;">
+					<div class="pull-left">
+						<div class="pull-left" style="width:35px; line-height:1;">
+							<div style="height:9px; margin:5px 0;">5 <span class="fa fa-star"></span></div>
+						</div>
+						<div class="pull-left" style="width:180px;">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 100%">
+							  </div>
+							</div>
+						</div>
+						<div class="pull-right" style="margin-left:10px;">1</div>
+					</div>
+					<div class="pull-left">
+						<div class="pull-left" style="width:35px; line-height:1;">
+							<div style="height:9px; margin:5px 0;">4 <span class="fa fa-star"></span></div>
+						</div>
+						<div class="pull-left" style="width:180px;">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							  </div>
+							</div>
+						</div>
+						<div class="pull-right" style="margin-left:10px;">1</div>
+					</div>
+					<div class="pull-left">
+						<div class="pull-left" style="width:35px; line-height:1;">
+							<div style="height:9px; margin:5px 0;">3 <span class="fa fa-star"></span></div>
+						</div>
+						<div class="pull-left" style="width:180px;">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar bg-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							  </div>
+							</div>
+						</div>
+						<div class="pull-right" style="margin-left:10px;">0</div>
+					</div>
+					<div class="pull-left">
+						<div class="pull-left" style="width:35px; line-height:1;">
+							<div style="height:9px; margin:5px 0;">2 <span class="fa fa-star"></span></div>
+						</div>
+						<div class="pull-left" style="width:180px;">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+							  </div>
+							</div>
+						</div>
+						<div class="pull-right" style="margin-left:10px;">0</div>
+					</div>
+					<div class="pull-left">
+						<div class="pull-left" style="width:35px; line-height:1;">
+							<div style="height:9px; margin:5px 0;">1 <span class="fa fa-star"></span></div>
+						</div>
+						<div class="pull-left" style="width:180px;">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							  </div>
+							</div>
+						</div>
+						<div class="pull-right" style="margin-left:10px;">0</div>
+					</div>
+				</div>
+			</div>			
+		</div>			
+		
+
+
+		<div class="row">
+			<div class="col-sm-10">
+		        <form method="post" role="form">
+		        	<label>Viết đánh giá của bạn</label>
+		        	<div class="form-group">
+		        		<div class="stars">
+			        	    <input class="star star-5" id="star-5" type="radio" name="star" value="5" />
+						    <label class="star star-5" for="star-5"></label>
+						    <input class="star star-4" id="star-4" type="radio" name="star" value="4" />
+						    <label class="star star-4" for="star-4"></label>
+						    <input class="star star-3" id="star-3" type="radio" name="star" value="3" />
+						    <label class="star star-3" for="star-3"></label>
+						    <input class="star star-2" id="star-2" type="radio" name="star" value="2" />
+						    <label class="star star-2" for="star-2"></label>
+						    <input class="star star-1" id="star-1" type="radio" name="star" value="1" />
+						    <label class="star star-1" for="star-1"></label>
+						</div>
+			        </div>
+		        	<div class="form-group">
+		        		<textarea class="form-control" name="comment" rows="3"></textarea>
+		        	</div>
+		        	<button type="submit" class="btn btn-primary">Submit</button>
+		        </form>			
+	        </div>
+
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-sm-7">
+				<hr/>
+				<div class="review-block">
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="http://www.inest.vn/vnt_upload/member/avatar/noavatar.gif" width="60" height="60">
+							<br>
+							<small><a href="#">Văn Thành</a></small>
+							<br>
+							<small>29/04/2018</small>
+						</div>
+						<div class="col-sm-9">
+							<div class="review-block-rate">
+								<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+							</div>
+							<b>Tuyệt vời</b><br>
+							Mình chưa mua nhưng nghe nói thế
+						</div>
+					</div>
+					<hr/>
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="http://www.inest.vn/vnt_upload/member/avatar/noavatar.gif" width="60" height="60">
+							<br>
+							<small><a href="#">Văn Hải</a></small>
+							<br>
+							<small>29/04/2018</small>
+						</div>
+						<div class="col-sm-9">
+							<div class="review-block-rate">
+								<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+								  <span class="fa fa-star" aria-hidden="true"></span>
+								</button>
+							</div>
+							<b>Rất tốt</b><br>
+							Kiểu dáng đẹp, nghe gọi được
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  </body>
+</html>

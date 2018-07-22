@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 //Route::get('trangchu', 'PagesController@getIndex');
 
-Route::get('index', [
+Route::get('trangchu', [
 	'as' => 'trang-chu',
 	'uses' => 'PagesController@getIndex',
 ]);
@@ -30,6 +30,30 @@ Route::get('loai-san-pham/{type}', [
 Route::get('chi-tiet-san-pham/{id}', [
 	'as' => 'chitietsanpham',
 	'uses' => 'PagesController@getChiTietSP',
+]);
+
+Route::get('tim-kiem', [
+	'as' => 'timkiem',
+	'uses' => 'PagesController@getTimKiem',
+]);
+
+Route::get('thanh-toan', [
+	'as' => 'thanhtoan',
+	'uses' => 'PagesController@getThanhToan',
+]);
+
+Route::get('check-out', [
+	'as' => 'checkout',
+	'uses' => 'PagesController@getCheckOut',
+]);
+Route::post('check-out', [
+	'as' => 'checkout',
+	'uses' => 'PagesController@postCheckOut',
+]);
+
+Route::get('xac-nhan/{id}', [
+	'as' => 'xacnhan',
+	'uses' => 'PagesController@getXacNhan',
 ]);
 
 Route::get('lien-he', [

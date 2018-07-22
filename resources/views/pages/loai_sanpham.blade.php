@@ -1,5 +1,5 @@
 @extends('master')
-
+@include('slide')
 @section('content')
 <div class="inner-header">
 		<div class="container">

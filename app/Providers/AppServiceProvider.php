@@ -30,6 +30,12 @@ class AppServiceProvider extends ServiceProvider {
 
 		});
 
+		view()->composer('layout.menu', function ($view) {
+			$producttype = ProductType::all();
+
+			$view->with('producttype', $producttype);
+		});
+
 	}
 
 	/**

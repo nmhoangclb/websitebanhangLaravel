@@ -1,10 +1,11 @@
 <div id="header">
-		<div class="header-top">
+		<!-- <div class="header-top">
+
 			<div class="container">
 				<div class="pull-left auto-width-left">
 					<ul class="top-menu menu-beta l-inline">
 						<li><a href=""><i class="fa fa-home"></i> 90-92 Đông Thọ, Thạnh Trị, Tân Hiệp - Kiên Giang</a></li>
-						<li><a href=""><i class="fa fa-phone"></i> 0165 6987 140</a></li>
+						<li><a href=""><i class="fa fa-phone"></i> 0165 6987</a></li>
 					</ul>
 				</div>
 				<div class="pull-right auto-width-right">
@@ -16,7 +17,7 @@
 				</div>
 				<div class="clearfix"></div>
 			</div> <!-- .container -->
-		</div> <!-- .header-top -->
+		<!--</div>  -->
 		<div class="header-body">
 			<div class="container beta-relative">
 				<div class="pull-left">
@@ -24,12 +25,12 @@
 				</div>
 				<div class="pull-right beta-components space-left ov">
 					<div class="space10">&nbsp;</div>
-					<div class="beta-comp">
+					<!--Tìm kiếm <div class="beta-comp">
 						<form role="search" method="get" id="searchform" action="/">
 					        <input type="text" value="" name="s" id="s" placeholder="Nhập từ khóa..." />
 					        <button class="fa fa-search" type="submit" id="searchsubmit"></button>
 						</form>
-					</div>
+					</div> -->
 
 					<div class="beta-comp">
 						@if(Session::has('cart'))
@@ -77,8 +78,9 @@
 			</div> <!-- .container -->
 		</div> <!-- .header-body -->
 		<div class="header-bottom" style="background-color: #0277b8;">
+
 			<div class="container">
-				<a class="visible-xs beta-menu-toggle pull-right" href="#"><span class='beta-menu-toggle-text'>Menu</span> <i class="fa fa-bars"></i></a>
+				<a class="visible-xs beta-menu-toggle pull-right" href="#"><span class='beta-menu-toggle-text'>Menu Ne</span> <i class="fa fa-bars"></i></a>
 				<div class="visible-xs clearfix"></div>
 				<nav class="main-menu">
 					<ul class="l-inline ov">
@@ -95,6 +97,6 @@
 					</ul>
 					<div class="clearfix"></div>
 				</nav>
-			</div> <!-- .container -->
+			</div>
 		</div> <!-- .header-bottom -->
 	</div> <!-- #header -->

@@ -14,7 +14,63 @@
 	<link rel="stylesheet" href="source/assets/dest/rs-plugin/css/responsive.css">
 	<link rel="stylesheet" title="style" href="source/assets/dest/css/style.css">
 	<link rel="stylesheet" href="source/assets/dest/css/animate.css">
-	<link rel="stylesheet" title="style" href="source/assets/dest/css/huong-style.css">
+
+
+	<link rel="stylesheet" title="style" href="test/styles.css">
+	<script src="test/script.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<style>
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
 <body>
 
